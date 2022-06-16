@@ -6,52 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="/dist/output.css" rel="stylesheet">
 </head>
 
 <body>
-    <section class="w-screen h-screen bg-bottom bg-cover bg-blend-multiply bg-gray-500 bg-no-repeat bg-hero-img text-white">
-        <nav class="flex flex-col sm:flex-row justify-between p-12 h-20 font-normal font-Montserrat items-center">
-            <div><img src="/src/assets/logo.svg" alt="Kweli capital logo"></div>
-            <div>
-                <ul class="flex space-x-10">
-                    <li>About</li>
-                    <li>Solutions</li>
-                    <li>Gallery</li>
-                    <li>News</li>
-                    <li>Contact us</li>
-                    <li>Amaka Fund</li>
-                </ul>
-            </div>
-            <div>
-                <ul class="flex space-x-10 items-center">
-                    <li><img src="/src/assets/earth-grid-symbol.png" alt="world icon"></li>
-                    <li>Kweli Group</li>
-                    <li class="text-2xl">|</li>
+    <div class="hero-section bg-faint bg-blend-multiply bg-hero-img min-h-screen bg-bottom bg-no-repeat bg-cover text-white">
+
+        <!-- mobile nav -->
+
+        <nav class="fixed top-0 z-10 w-full">
+            <div class="flex justify-between pt-8 px-8 items-center">
+                <img src="/src/assets/nav/logo.svg" alt="kweli capital logo">
+            <!-- <div class="visible">
+                <ul class="flex justify-around space-x-4">
                     <li>
-                        <select name="country" id="1" class="rounded-xl border border-white bg-transparent">
-                            <option selected value="">Ke</option>
-                            <option value="">Ug</option>
-                            <option value="">Gh</option>
-                        </select>
+                        <a href="#">About</a>
                     </li>
-                    <li><img src="/src/assets/Oval.svg" alt="menu toggler"></li>
+                    <li>
+                        <a href="#">Solutions</a>
+                    </li>
+                    <li>
+                        <a href="#">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="#">News</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact us</a>
+                    </li>
+                    <li>
+                        <a href="#">Amaka Fund</a>
+                    </li>
                 </ul>
+            </div> -->
+
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+              </svg> -->
+
+            <img class="scale-125 cursor-pointer" src="/src/assets/nav/nav-toggle.svg" alt="menu toggler">
             </div>
         </nav>
 
-        <div class="flex flex-col h-4/5 pt-4 justify-between">
-            <div class="h-2/5 pt-14 grid items-center text-center uppercase text-lg sm:text-xl tracking-wide">
-                We Build the defining <br> companies of tomorrow
+        <div class="hero-header">
+            <div class="container mx-auto">
+                <div class="flex justify-center">
+                    <div class="w-full max-w-screen-xl">
+                        <div class="flex flex-wrap justify-center">
+                            <div class="w-full md:w-2/3 p-6 grid place-items-center h-screen -mt-28">
+                                <h1 class="text-xl sm:text-5xl leading-tight text-white text-center">
+                                    WE BUILD THE DEFINING <br> <span class="text-white font-bold">COMPANIES OF TOMORROW</span>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="flex flex-col justify-center items-center">
-                <img src="/src/assets/scroll-button.png" alt="">
-                <span>Scroll down</span>
-            </div>
-        </div>
-    </section>
 
+            <div class="grid space-y-2 -mt-6 pb-10">
+                <img class="place-self-center scale-125" src="/src/assets/scroll-button.svg" alt="">
+                <p class="place-self-center">Scroll down</p>
+            </div>
+        </div>  
+    </div>
 </body>
 
 </html>
