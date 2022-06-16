@@ -11,51 +11,66 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link href="/dist/output.css" rel="stylesheet">
+    <title>Kweli Capital</title>
 </head>
 
 <body>
     <div
         class="hero-section bg-faint bg-blend-multiply bg-hero-img min-h-screen bg-bottom bg-no-repeat bg-cover text-white">
 
-        <nav class="shadow md:flex md:items-center md:justify-between fixed w-screen z-50">
-            <div class="flex justify-between items-center ">
-              <span>
-                <img class="h-10 inline"
-                  src="">
-                Kweli Logo
-              </span>
-          
-              <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-                <!-- <ion-icon name="menu" onclick="Menu(this)"></ion-icon> -->
-                <img class="scale-125 cursor-pointer" src="/src/assets/nav/nav-toggle.svg" alt="menu toggler" name="menu" onclick="Menu(this)">
-              </span>
+        <nav class="flex justify-between items-center fixed w-screen z-50 py-2 sm:py-6">
+            <div>
+                <img class="px-6" src="/src/assets/nav/logo.svg">
             </div>
-          
+
             <ul
-              class="md:flex md:items-center z-50 md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in-out duration-400 text-right pr-10">
-              <li class="mx-4 my-6 md:my-0">
-                <a href="#" class="text-xl hover:underline underline-offset-8 duration-500">About</a>
-              </li>
-              <li class="mx-4 my-6 md:my-0">
-                <a href="#" class="text-xl hover:underline underline-offset-8 duration-500">Solutions</a>
-              </li>
-              <li class="mx-4 my-6 md:my-0">
-                <a href="#" class="text-xl hover:underline underline-offset-8 duration-500">Amaka</a>
-              </li>
-              <li class="mx-4 my-6 md:my-0">
-                <a href="#" class="text-xl hover:underline underline-offset-8 duration-500">Gallery</a>
-              </li>
-              <li class="mx-4 my-6 md:my-0">
-                <a href="#" class="text-xl hover:underline underline-offset-8 duration-500">Contact Us</a>
-              </li>
-          
-              <a class="bg-cyan-400 text-white duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded flex items-center justify-end space-x-8">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                  </svg> Kweli Group
-                </a>
+                class="md:flex z-50 md:z-auto md:static absolute left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in-out duration-400 text-right pr-10">
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#" class="text-xl hover:underline underline-offset-8 duration-500">About</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="solutions.html" class="text-xl hover:underline underline-offset-8 duration-500">Solutions</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#" class="text-xl hover:underline underline-offset-8 duration-500">Amaka</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#" class="text-xl hover:underline underline-offset-8 duration-500">Gallery</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#" class="text-xl hover:underline underline-offset-8 duration-500">Contact Us</a>
+                </li>
+
+                <ul>
+                    <li>
+                        <div class="flex">
+                            <a class="text-white duration-500 mx-4 rounded flex items-center justify-end space-x-8">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="white"
+                                    stroke-width="1">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                                </svg> Kweli Group
+                            </a>
+                
+                            <h1> | </h1>
+                
+                            <div>
+                                <select name="" id="" class="bg-transparent border p-0 border-white rounded-md focus:border-0">
+                                    <option value="Ke">Ke</option>
+                                    <option value="Ug">Ug</option>
+                                </select>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
             </ul>
-          </nav>
+
+            <span class="text-3xl cursor-pointer mx-2 block">
+                <img class="scale-125 cursor-pointer z-50" src="/src/assets/nav/nav-toggle.svg" alt="menu toggler"
+                    name="menu" onclick="Menu(this)">
+            </span>
+        </nav>
 
         <div class="hero-header">
             <div class="container mx-auto">
@@ -63,7 +78,7 @@
                     <div class="w-full max-w-screen-xl">
                         <div class="flex flex-wrap justify-center">
                             <div class="w-full md:w-2/3 p-6 grid place-items-center h-screen -mt-28">
-                                <h1 class="text-xl sm:text-5xl leading-tight text-white text-center">
+                                <h1 class="text-xl sm:text-4xl md:text-5xl leading-relaxed text-white text-center">
                                     WE BUILD THE DEFINING <br> <span class="text-white font-bold">COMPANIES OF
                                         TOMORROW</span>
                                 </h1>
@@ -80,15 +95,14 @@
         </div>
     </div>
 
-    <!-- Summary -->
+    <!-- Global Scale, local expertise -->
 
-    <div class="container mx-auto min-h-screen/2">
+    <div class="container mx-auto sm:py-12 space-y-10">
         <div class="flex justify-center">
             <div class="w-full max-w-screen-xl">
                 <div class="flex flex-wrap justify-center pt-4">
                     <div class="w-full md:w-2/3 px-6 grid place-items-center sm:pt-16 space-y-2">
-                        <h2
-                            class="text-xl sm:text-5xl font-semibold leading-tight px-16 sm:px-0 text-black text-center">
+                        <h2 class="text-xl sm:text-5xl font-bold leading-tight px-16 sm:px-0 text-black text-center">
                             Global scale, local expertise
                         </h2>
                         <p class="text-xs sm:text-lg text-faint text-center pt-2 px-4 break-all">
@@ -97,55 +111,57 @@
                         </p>
                     </div>
                 </div>
-
+    
                 <div class="sm:flex space-y-2">
-                    <div class="flex flex-wrap justify-start sm:pt-1">
-                        <div class="w-full px-6 sm:pt-16 space-y-2">
+                    <div class="flex flex-wrap justify-start sm:pt-1 px-2">
+                         <div class="w-full px-6 sm:pt-16 space-y-2">
                             <h1 class="flex justify-start space-x-2">
                                 <img src="/src/assets/data-driven.svg" alt="">
-                                <span class="font-semibold text-sm">Data-driven <br> Solutions</span>
+                                <span class="font-bold text-sm md:text-xl">Data-driven <br> Solutions</span>
                             </h1>
-                            <p class="text-faint text-xs sm:text-lg">We provide solutions that are driven by Factual and
+                            <p class="text-faint text-xs sm:text-sm md:text-xl">We provide solutions that are driven by Factual and
                                 Accurate data. This enables our clients to make informed strategic decisions.</p>
                         </div>
                     </div>
-
-                    <div class="flex flex-wrap justify-start pt-4 sm:pt-1">
+    
+                    <div class="flex flex-wrap justify-start pt-4 sm:pt-1 px-2">
                         <div class="w-full px-6 sm:pt-16 space-y-2">
                             <h1 class="flex justify-start space-x-2">
                                 <img src="/src/assets/saas.svg" alt="">
-                                <span class="font-semibold text-sm">Software as a Service<br>(Saas)</span>
+                                <span class="font-semibold text-sm md:text-xl">Software as a Service<br>(Saas)</span>
                             </h1>
-                            <p class="text-faint text-xs sm:text-lg">As experts in efficient business applications, we
+                            <p class="text-faint text-xs sm:text-sm md:text-xl">As experts in efficient business applications, we
                                 assist you with all issues to do with application integration within your business.</p>
                         </div>
                     </div>
-
-                    <div class="flex flex-wrap justify-start pt-4 sm:pt-1">
+    
+                    <div class="flex flex-wrap justify-start pt-4 sm:pt-1 px-2">
                         <div class="w-full px-6 sm:pt-16 space-y-2">
                             <h1 class="flex justify-start space-x-2">
                                 <img src="/src/assets/bespoke-tech.svg" alt="">
-                                <span class="font-semibold text-sm">Bespoke Technology <br>Solutions</span>
+                                <span class="font-semibold text-sm md:text-xl">Bespoke Technology <br>Solutions</span>
                             </h1>
-                            <p class="text-faint text-xs sm:text-lg">We craft bespoke and uniquely tailored digital
+                            <p class="text-faint text-xs sm:text-sm md:text-xl">We craft bespoke and uniquely tailored digital
                                 solutions for our clients ensures all aspects of the process are well-considered.</p>
                         </div>
                     </div>
                 </div>
-
+    
                 <!-- why choose us -->
-                <div class="p-6 items-center divide-y divide-faint">
+
+                <div class="p-6 items-center divide-y divide-faint sm:mt-20 md:px-48">
                     <h1 class="flex justify-start pb-6">
-                        <span class="font-semibold text-xl">Why Choose Us?</span>
+                        <span class="font-semibold sm:font-bold text-xl sm:text-5xl">Why Choose Us?</span>
                     </h1>
 
-                    <!-- <hr class="mt-4 stroke-faint bg-faint"> -->
-
+                <!-- Accordion tabs -->
+    
                     <div class="bg-white divide-y divide-faint text-sm sm:text-lg">
+                        <!-- tab 1 -->
                         <div class="relative w-full overflow-hidden py-2">
                             <input type="checkbox"
                                 class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer">
-
+    
                             <div class="bg-white h-12 w-full flex items-center">
                                 <h1>
                                     Proven & Reputable Track Record
@@ -155,25 +171,27 @@
                                 class="absolute top-4 right-1 transition-transform duration-500 rotate-0 peer-checked:rotate-45">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor" stroke-width="1">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                                 </svg>
                             </div>
-
+    
                             <div
                                 class="bg-white text-faint overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-full">
-                                <div>
+                                <div class="flex justify-between">
                                     <p>We have successfully supported, the BomaYangu platform, provided data analytic
                                         solutions & technology integrations, and have partnered with some of the
                                         nation's biggest institutions.</p>
+                                    <img class="md:px-16 hidden md:flex h-auto" src="/src/assets/track-record.png" alt="bomayangu">
                                 </div>
                             </div>
                         </div>
 
+                        <!-- tab 2 -->
+
                         <div class="relative w-full overflow-hidden py-2">
                             <input type="checkbox"
                                 class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer">
-
+    
                             <div class="bg-white h-12 w-full flex items-center">
                                 <h1>
                                     Highly Skilled & Diverse Team
@@ -183,25 +201,27 @@
                                 class="absolute top-4 right-1 transition-transform duration-500 rotate-0 peer-checked:rotate-45">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor" stroke-width="1">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                                 </svg>
                             </div>
-
+    
                             <div
                                 class="bg-white text-faint overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-full">
-                                <div>
+                                <div class="flex justify-between">
                                     <p>We have successfully supported, the BomaYangu platform, provided data analytic
                                         solutions & technology integrations, and have partnered with some of the
                                         nation's biggest institutions.</p>
+                                    <img class="md:px-16 hidden md:flex h-auto" src="/src/assets/track-record.png" alt="bomayangu">
                                 </div>
                             </div>
                         </div>
 
+                        <!-- tab 3 -->
+    
                         <div class="relative w-full overflow-hidden py-2">
                             <input type="checkbox"
                                 class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer">
-
+    
                             <div class="bg-white h-12 w-full flex items-center">
                                 <h1>
                                     Revolutionary Data-Driven Solutions
@@ -211,80 +231,82 @@
                                 class="absolute top-4 right-1 transition-transform duration-500 rotate-0 peer-checked:rotate-45">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor" stroke-width="1">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                                 </svg>
                             </div>
-
+    
                             <div
                                 class="bg-white text-faint overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-full">
-                                <div>
+                                <div class="flex justify-between">
                                     <p>We have successfully supported, the BomaYangu platform, provided data analytic
                                         solutions & technology integrations, and have partnered with some of the
                                         nation's biggest institutions.</p>
+                                    <img class="md:px-16 hidden md:flex h-auto" src="/src/assets/track-record.png" alt="bomayangu">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <hr class="stroke-faint bg-faint">
                 </div>
-
             </div>
         </div>
     </div>
+    <!-- End Global Scale, local expertise -->
 
     <!-- National influence -->
 
-    <div class="grid place-content-center -mb-52 sm:place-content-start sm:pl-24">
+    <div class="grid place-content-center -mb-52 sm:place-content-start sm:pl-24 mt-28">
         <div>
-            <div class="h-64 w-64 bg-black rounded-2xl p-10 relative">
-            <h1 class="text-2xl font-semibold text-white absolute bottom-12 left-10">Our National <br> <span
-                    class="underline underline-offset-16">Influ</span>ence</h1>
-        </div>
+            <div class="h-72 w-72 sm:h-80 sm:w-80 bg-black rounded-3xl p-10 relative">
+                <h1 class="text-2xl sm:text-4xl leading-relaxed font-semibold sm:font-bold text-white absolute bottom-14 left-10">Our National <br> <span
+                        class="border-b-4 pb-6">Influ</span>ence</h1>
+            </div>
         </div>
     </div>
-    <div class="h-screen/2 sm:h-screen-mid bg-national-influence bg-no-repeat bg-center bg-cover bg-faint bg-blend-multiply sm:grid sm:grid-cols-1 sm:place-content-center">
-        <div class="flex flex-col items-center justify-center text-white space-y-8 sm:flex-row sm:pt-20">
-            <div class="text-center space-y-2 pt-60 sm:pt-0">
-                <h1 class="text-4xl font-semibold">1.6B</h1>
-                <p class="px-20 text-sm">An equivalent of KSH 1.6B saved by citizens through Affordable Housing Programs</p>
+    <div
+        class="md:h-screen/2 bg-national-influence bg-no-repeat bg-center bg-cover bg-faint bg-blend-multiply sm:grid sm:grid-cols-1 sm:place-content-center">
+        <div class="flex flex-col items-center justify-center text-white space-y-6 md:flex-row sm:pt-32 md:divide-x">
+            <div class="text-center space-y-2 pt-60 md:pt-0">
+                <h1 class="text-5xl font-semibold sm:font-bold">1.6B</h1>
+                <p class="px-16 p-2 text-sm sm:text-lg">An equivalent of KSH 1.6B saved by citizens through Affordable Housing Programs</p>
             </div>
             <div class="text-center space-y-2">
-                <h1 class="text-4xl font-semibold">33K vs 21K</h1>
-                <p class="px-20 text-sm">Current Mortgages in Kenya(21K) vs (33K) active savers on the BomaYangu platform in
+                <h1 class="text-5xl font-semibold sm:font-bold">33K vs 21K</h1>
+                <p class="px-16 p-2 text-sm sm:text-lg">Current Mortgages in Kenya(21K) vs (33K) active savers on the BomaYangu
+                    platform in
                     under 3 years.</p>
             </div>
             <div class="text-center space-y-2">
-                <h1 class="text-4xl font-semibold">50B</h1>
-                <p class="px-20 text-sm">KSH has been committed by banks towards Affordable Housing Programs</p>
+                <h1 class="text-5xl font-semibold sm:font-bold">50B</h1>
+                <p class="px-16 p-2 text-sm sm:text-lg">KSH has been committed by banks towards Affordable Housing Programs</p>
             </div>
         </div>
     </div>
 
     <!-- End National influence -->
-    
+
     <!-- organizations -->
 
-    <div class="container mx-auto px-16 sm:h-screen/4 sm:py-8">
+    <div class="container mx-auto px-16 sm:py-6">
         <h1 class="text-center font-semibold text-lg py-6">Join the leading organizations using Kweli</h1>
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-1 md:place-items-stretch">
-            <div class="bg-card p-4 w-32 h-14 md:w-full rounded-md grid place-items-center">
-                <img class="scale-75" src="/src/assets/orgs/genghis-capital.png" alt="genghis capital logo">
+            <div class="bg-card p-4 sm:p-10  md:w-full rounded-md grid place-items-center">
+                <img class="scale-75 sm:scale-150" src="/src/assets/orgs/genghis-capital.png" alt="genghis capital logo">
             </div>
-            <div class="bg-card p-4 w-32 h-14 md:w-full rounded-md grid place-items-center">
-                <img class="scale-75" src="/src/assets/orgs/hfgroup.png" alt="hf group logo">
+            <div class="bg-card p-4 sm:p-10 md:w-full rounded-md grid place-items-center">
+                <img class="scale-75 sm:scale-150" src="/src/assets/orgs/hfgroup.png" alt="hf group logo">
             </div>
-            <div class="bg-card p-4 w-32 h-14 md:w-full rounded-md grid place-items-center">
-                <img class="scale-75 -mt-2" src="/src/assets/orgs/county.png" alt="county government logo">
+            <div class="bg-card p-4 sm:p-10 md:w-full rounded-md grid place-items-center">
+                <img class="scale-75 sm:scale-150 -mt-2" src="/src/assets/orgs/county.png" alt="county government logo">
             </div>
-            <div class="bg-card p-4 w-32 h-14 md:w-full rounded-md grid place-items-center">
-                <img class="scale-75" src="/src/assets/orgs/telkom.png" alt="telkom logo">
+            <div class="bg-card p-4 sm:p-10 md:w-full rounded-md grid place-items-center">
+                <img class="scale-75 sm:scale-150" src="/src/assets/orgs/telkom.png" alt="telkom logo">
             </div>
-            <div class="bg-card p-4 w-32 h-14 md:w-full rounded-md grid place-items-center">
-                <img class="scale-75" src="/src/assets/orgs/bomayangu.png" alt="boma yangu logo">
+            <div class="bg-card p-4 sm:p-10 md:w-full rounded-md grid place-items-center">
+                <img class="scale-75 sm:scale-150" src="/src/assets/orgs/bomayangu.png" alt="boma yangu logo">
             </div>
-            <div class="bg-card p-4 w-32 h-14 md:w-full rounded-md grid place-items-center">
-                <img class="scale-75 -mt-4" src="/src/assets/orgs/huduma-kenya.png" alt="huduma logo">
+            <div class="bg-card p-4 sm:p-10 md:w-full rounded-md grid place-items-center">
+                <img class="scale-75 sm:scale-150 -mt-4" src="/src/assets/orgs/huduma-kenya.png" alt="huduma logo">
             </div>
         </div>
     </div>
@@ -298,11 +320,12 @@
                     <img class="" src="/src/assets/kweli-capital.png" alt="kweli capital logo footer">
                 </a>
                 <p class="mt-2 text-xs sm:text-base text-faint">
-                    Inspired by power of data as a point of connection, we not only connect people, businesses,and industries, we inspire informed strategic decisions that power the future.
+                    Inspired by power of data as a point of connection, we not only connect people, businesses,and
+                    industries, we inspire informed strategic decisions that power the future.
                 </p>
             </div>
             <div class="flex justify-center pt-6 col-span-2">
-    
+
                 <div class="w-full">
                     <h2 class="title-font font-bold text-faint text-sm mb-4">COMPANY</h2>
                     <nav class="list-none text-sm text-black">
@@ -340,31 +363,36 @@
                             </li>
                         </div>
                         <div class="pt-24">
-                                <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 sm:justify-start scale-90 justify-between space-x-2">
-                                    <a class="bg-card rounded-full p-1" href="">
-                                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            class="w-5 h-5" viewBox="0 0 24 24">
-                                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                                        </svg>
-                                    </a>
-                                    <a class="bg-card rounded-full p-1" href="">
-                                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                                          </svg>
-                                    </a>
-                                    <a class="bg-card rounded-full p-1" href="">
-                                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            class="w-5 h-5" viewBox="0 0 24 24">
-                                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                                        </svg>
-                                    </a>
-                                    <a class="bg-card rounded-full p-1" href="">
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                                          </svg>
-                                    </a>
-                                </span>
+                            <span
+                                class="inline-flex sm:ml-auto sm:mt-0 mt-2 sm:justify-start scale-90 justify-between space-x-2">
+                                <a class="bg-card rounded-full p-1" href="">
+                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                    </svg>
+                                </a>
+                                <a class="bg-card rounded-full p-1" href="">
+                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path
+                                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a class="bg-card rounded-full p-1" href="">
+                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                    </svg>
+                                </a>
+                                <a class="bg-card rounded-full p-1" href="">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                                    </svg>
+                                </a>
+                            </span>
                         </div>
                     </nav>
                 </div>
@@ -381,9 +409,10 @@
 
     <script>
         function Menu(e) {
-          let list = document.querySelector('ul');
-          e.name === 'menu' ? (e.name = "close", list.classList.add('top-12'), list.classList.add('opacity-100'), list.classList.add('bg-black'), list.classList.add('h-screen')) : (e.name = "menu", list.classList.remove('top-12'), list.classList.remove('opacity-100'), list.classList.remove('bg-black'), list.classList.remove('h-screen'))
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-12'), list.classList.add('opacity-100'), list.classList.add('bg-black'), list.classList.add('h-screen')) : (e.name = "menu", list.classList.remove('top-12'), list.classList.remove('opacity-100'), list.classList.remove('bg-black'), list.classList.remove('h-screen'))
         }
-      </script>
-    </body>
-    </html>
+    </script>
+</body>
+
+</html>
