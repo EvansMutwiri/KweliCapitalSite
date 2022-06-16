@@ -17,41 +17,45 @@
     <div
         class="hero-section bg-faint bg-blend-multiply bg-hero-img min-h-screen bg-bottom bg-no-repeat bg-cover text-white">
 
-        <!-- mobile nav -->
-
-        <nav class="fixed top-0 z-10 w-full">
-            <div class="flex justify-between pt-8 px-8 items-center">
-                <img src="/src/assets/nav/logo.svg" alt="kweli capital logo">
-                <!-- <div class="visible">
-                <ul class="flex justify-around space-x-4">
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Solutions</a>
-                    </li>
-                    <li>
-                        <a href="#">Gallery</a>
-                    </li>
-                    <li>
-                        <a href="#">News</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact us</a>
-                    </li>
-                    <li>
-                        <a href="#">Amaka Fund</a>
-                    </li>
-                </ul>
-            </div> -->
-
-                <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-              </svg> -->
-
-                <img class="scale-125 cursor-pointer" src="/src/assets/nav/nav-toggle.svg" alt="menu toggler">
+        <nav class="shadow md:flex md:items-center md:justify-between fixed w-screen z-50">
+            <div class="flex justify-between items-center ">
+              <span>
+                <img class="h-10 inline"
+                  src="">
+                Kweli Logo
+              </span>
+          
+              <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                <!-- <ion-icon name="menu" onclick="Menu(this)"></ion-icon> -->
+                <img class="scale-125 cursor-pointer" src="/src/assets/nav/nav-toggle.svg" alt="menu toggler" name="menu" onclick="Menu(this)">
+              </span>
             </div>
-        </nav>
+          
+            <ul
+              class="md:flex md:items-center z-50 md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in-out duration-400 text-right pr-10">
+              <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl hover:underline underline-offset-8 duration-500">About</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl hover:underline underline-offset-8 duration-500">Solutions</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl hover:underline underline-offset-8 duration-500">Amaka</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl hover:underline underline-offset-8 duration-500">Gallery</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl hover:underline underline-offset-8 duration-500">Contact Us</a>
+              </li>
+          
+              <a class="bg-cyan-400 text-white duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded flex items-center justify-end space-x-8">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                  </svg> Kweli Group
+                </a>
+            </ul>
+          </nav>
 
         <div class="hero-header">
             <div class="container mx-auto">
@@ -374,5 +378,12 @@
             </p>
         </div>
     </div>
+
+    <script>
+        function Menu(e) {
+          let list = document.querySelector('ul');
+          e.name === 'menu' ? (e.name = "close", list.classList.add('top-12'), list.classList.add('opacity-100'), list.classList.add('bg-black'), list.classList.add('h-screen')) : (e.name = "menu", list.classList.remove('top-12'), list.classList.remove('opacity-100'), list.classList.remove('bg-black'), list.classList.remove('h-screen'))
+        }
+      </script>
     </body>
     </html>
