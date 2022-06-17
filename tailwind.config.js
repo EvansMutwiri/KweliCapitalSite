@@ -5,13 +5,15 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero-img': "url('/src/assets/header-img.png')",
+        'solutions-img': "url('/src/assets/solutions/solutions.png')",
+
         'national-influence': "url('/src/assets/national-infl.png')",
       },
       fontFamily: {
         'Montserrat': ['Montserrat', 'sans-serif']
       },
       textUnderlineOffset: {
-        16: '20px',
+        16: '30px',
       },
       height: {
         "screen-mid": "60vh",
