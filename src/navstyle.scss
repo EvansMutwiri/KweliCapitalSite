@@ -1,0 +1,145 @@
+$navFullscreen-font-size: 2rem;
+$navFullscreen-line-height: $navFullscreen-font-size * 2;
+$navFullscreen-font-size-mobile: 1rem;
+$navFullscreen-line-height-mobile: $navFullscreen-font-size-mobile * 2;
+
+* {
+  box-sizing: border-box;
+}
+.hamburger {
+    position: fixed;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 12px;
+    top: 3vh;
+    right: 3vw;
+    z-index: 9000;
+    width: 2.6em;
+    height: 2.6em;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.hamburger__line {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 0.1875em;
+    background: black;
+    border-radius: 0.5em;
+}
+
+.hamburger--steps .hamburger__line {
+    transition: width 0.12s ease-in-out;
+
+    &:nth-child(2) {
+        width: 80%;
+    }
+
+    &:last-child {
+        width: 55%;
+    }
+}
+
+
+.hamburger--active.hamburger--steps .hamburger__line {
+    transition: none;
+    width: 100%;
+}
+
+.hamburger--active .hamburger__line {
+    background-color: black;
+    position: absolute;
+    top: 1.2em;
+    margin: 0;
+    background: black;
+
+    &:first-child {
+        transform: rotate(-45deg);
+        width: 40%;
+    }
+
+    &:nth-child(2) {
+        display: none;
+    }
+
+    &:last-child {
+        margin: 0;
+        transform: rotate(45deg);
+        width: 40%;
+    }
+}
+
+.nav-fullscreen {
+    padding-top: 10%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    z-index: 800;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+
+    &--open {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__items {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: right;
+        font-size: $navFullscreen-font-size;
+        line-height: $navFullscreen-line-height;
+
+        @media(max-width: 375px) {
+            font-size: $navFullscreen-font-size-mobile;
+            line-height: $navFullscreen-line-height-mobile;
+        }
+    }
+
+   
+
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -30%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeOutUp {
+    from {
+        opacity: 1;
+        transform: none;
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(0, -30%, 0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
